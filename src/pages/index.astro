@@ -3,68 +3,143 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
 
-<Layout title=" ESP_XPAT'S">
+<Layout title="ESP_XPAT'S">
   <header>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#algo">Servicios</a></li>
-        <li><a href="#contactos">Contactos</a></li>
+        <li><a href="#nosotros">Servicios</a></li>
+        <li><a href="#contactanos">Contactos</a></li>
       </ul>
-		<div class="logo_alargado">
-			<img src="/logoESP_defi.png" alt="Logo ESP XPAT'S">
-		</div>
     </nav>
   </header>
   <main>
-    <section id="inicio">
-      <h1>Bienvenido a ESP XPAT'S</h1>
-      <h3>¿QUIENES SOMOS?</h3>
-      <p>
-        Somos el puente que conecta tu talento con las oportunidades laborales
-        en Holanda, eliminando la incertidumbre del proceso. Como expertos en el
-        sector de las ETT, nos encargamos de proteger tus intereses. No solo
-        traducimos palabras; traducimos oportunidades. Nos aseguramos de que
-        entiendas cada detalle de tu vida laboral en tu propio idioma y de que
-        recibas cada euro que te corresponde por tu trabajo. Somos el apoyo que
-        necesitas para que tú solo tengas que preocuparte de crecer
-        profesionalmente.
-      </p>
-    </section>
-    <section id="servicios">
-      <h3>¿QUE OFECEMOS?</h3>
-      <p>
-        Colaboramos con empresas y ETT líderes en el sector logístico de los
-        Países Bajos, gestionando oportunidades de empleo que combinan
-        condiciones competitivas con planes de desarrollo profesional sólido.
-        Nuestra misión es eliminar la incertidumbre. Te acompañamos de principio
-        a fin para que tu experiencia laboral sea segura, clara y sin sorpresas,
-        actuando como tu aliado frente a la complejidad del sistema neerlandés.
-        🛡️ ¿Qué hacemos por ti? * Asesoramiento Estratégico: Te orientamos para
-        seleccionar la vacante que mejor se alinee con tu perfil y expectativas.
-        * Claridad Jurídica y Lingüística: Traducimos y desglosamos tus
-        contratos y condiciones laborales. Con nosotros, siempre sabrás qué
-        estás firmando. * Auditoría de Nóminas: Realizamos una revisión
-        exhaustiva de tus pagos para garantizar que cada hora trabajada sea
-        remunerada correctamente. * Gestión Administrativa Integral: Te guiamos
-        en los trámites esenciales (DigiD, seguro médico, solicitudes de
-        devolución y gestiones burocráticas). * Soporte Continuo: No estás solo.
-        Ofrecemos asistencia permanente durante toda tu estancia para resolver
-        cualquier incidencia.
-      </p>
-    </section>
-    <section id="algo">
-      <h3>¿QUE OFECEMOS?</h3>
-      <p>
-        El respaldo que necesitas en Holanda, sin complicaciones. * Adiós a la
-        barrera del idioma: Traducimos contratos y nóminas. Entenderás cada
-        palabra de lo que firmas. * Garantía de pago: Auditamos tus nóminas para
-        asegurar que recibes hasta el último euro que te corresponde. * Cero
-        burocracia: Gestionamos tu DigiD, seguro médico y trámites para que tú
-        solo te ocupes de trabajar. * Soporte 24/7: No eres un número más. Somos
-        tu enlace directo con la ETT para resolver cualquier problema.
-      </p>
+    <section id="servicios" class="section-container">
+  <h3>¿QUÉ OFRECEMOS?</h3>
+  <p class="intro-text">
+    Colaboramos con empresas y ETT líderes en el sector logístico de los Países Bajos. 
+    Nuestra misión es eliminar la incertidumbre y actuar como tu aliado.
+  </p>
+
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon"></span>
+        <h4>Asesoramiento Estratégico</h4>
+      </div>
+      <div class="card-body">
+        <p>Te orientamos para seleccionar la vacante que mejor se alinee con tu perfil y expectativas.</p>
+        <div class="contenido-extra">
+          <p>Analizamos tus habilidades y experiencia previa para asegurarnos de que el puesto que elijas no solo sea un trabajo, sino un paso adelante en tu carrera profesional. Evitamos que aceptes ofertas que no te convienen.</p>
+        </div>
+        <button class="btn-leer-mas">Leer más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon"></span>
+        <h4>Claridad Jurídica</h4>
+      </div>
+      <div class="card-body">
+        <p>Traducimos y desglosamos tus contratos y condiciones laborales.</p>
+        <div class="contenido-extra">
+          <p>Con nosotros, siempre sabrás qué estás firmando. Te explicamos la letra pequeña, las cláusulas de rescisión, los horarios y tus derechos según la ley holandesa, eliminando la barrera del idioma.</p>
+        </div>
+        <button class="btn-leer-mas">Leer más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon"></span>
+        <h4>Auditoría de Nóminas</h4>
+      </div>
+      <div class="card-body">
+        <p>Realizamos una revisión exhaustiva de tus pagos mensuales.</p>
+        <div class="contenido-extra">
+          <p>Garantizamos que cada hora trabajada (incluyendo horas extra, festivos y turnos de noche) sea remunerada correctamente. Si hay un error en tu nómina, nosotros gestionamos la reclamación por ti.</p>
+        </div>
+        <button class="btn-leer-mas">Leer más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon"></span>
+        <h4>Gestión Administrativa</h4>
+      </div>
+      <div class="card-body">
+        <p>Te guiamos en los trámites esenciales al llegar a Holanda.</p>
+        <div class="contenido-extra">
+          <p>Te ayudamos con la obtención del BSN (número de ciudadano), la activación del DigiD, la contratación obligatoria del seguro médico, las solicitudes de devolución de impuestos y cualquier otra gestión burocrática necesaria.</p>
+        </div>
+        <button class="btn-leer-mas">Leer más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="icon"></span>
+        <h4>Soporte Continuo</h4>
+      </div>
+      <div class="card-body">
+        <p>No estás solo. Ofrecemos asistencia permanente durante tu estancia.</p>
+        <div class="contenido-extra">
+          <p>Desde el primer día hasta el último, somos tu punto de contacto para resolver cualquier incidencia con la vivienda, el transporte o la empresa. Actuamos como tu red de seguridad en un país extranjero.</p>
+        </div>
+        <button class="btn-leer-mas">Leer más</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // Buscamos todos los botones de "Leer más"
+  const botones = document.querySelectorAll('.btn-leer-mas');
+
+  botones.forEach(boton => {
+    boton.addEventListener('click', () => {
+      // Al hacer clic, buscamos la tarjeta padre
+      const tarjeta = boton.closest('.card');
+      // Le ponemos o quitamos la clase 'expandida'
+      if(tarjeta){
+        tarjeta.classList.toggle('expandida');
+
+              // Cambiamos el texto del botón
+        if (tarjeta.classList.contains('expandida')) {
+          boton.textContent = "Leer menos";
+        } else {
+          boton.textContent = "Leer más";
+        }
+      }
+      
+    });
+  });
+</script>
+    <section id="contactanos" class="section-container">
+      <h3>CONTACTA CON NOSOTROS</h3>
+      <p>Rellena el formulario y te responderemos lo antes posible</p>
+
+      <form action="https://formspree.io/f/xzdabjld" method="POST" class="contactanos_formulario">
+        
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="name" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="text" id="email" name="email" placeholder="Tu correo" required>
+
+        <label for="telefono">Telefono (opcional)</label>
+        <input type="tel" id="telefono" name="phone" placeholder="Tu telefono" required>
+
+        <label for="mensaje">¿Porque te interesa contactar connosotros?</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escibe para que podemos ayudarte" required></textarea>
+
+        <button type="submit" class="btn_formulario">Enviar mensaje</button>
+      </form>
     </section>
   </main>
 </Layout>
