@@ -1,0 +1,151 @@
+/* --- src/styles/global.css --- */
+
+/* 1. RESET BÁSICO */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif; /* O la fuente que prefieras */
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2. HEADER Y NAVEGACIÓN */
+header {
+  background-color: #333; /* Fondo oscuro para todo el cabezal */
+  position: sticky; /* Se queda pegado arriba al hacer scroll (opcional) */
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Ponemos los elementos uno debajo de otro */
+}
+
+/* 2.1 EL MENÚ (La lista de enlaces) */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centramos los enlaces */
+  gap: 30px; /* Espacio entre palabras */
+  margin: 0;
+  padding: 15px 0;
+  width: 100%;
+  background-color: #222; /* Un tono un poco más oscuro para la barra de menú */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase; /* Pone el texto en mayúsculas automáticamente */
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f4f195; /* Color amarillo al pasar el ratón */
+}
+
+/* 2.2 EL BANNER (Tu imagen alargada) */
+.logo_alargado {
+  width: 100%;
+  height: 140px; /* Altura fija del banner */
+  background-color: #000;
+  overflow: hidden;
+}
+
+.logo_alargado img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre todo el espacio sin deformarse */
+  object-position: center; /* Centra la imagen */
+  display: block;
+}
+
+/* 3. CONTENIDO PRINCIPAL (MAIN) */
+main {
+  max-width: 900px; /* Ancho máximo del texto para que sea legible */
+  margin: 0 auto;   /* Centra el bloque de contenido */
+  padding: 40px 20px;
+  background-color: white; /* Fondo blanco para el texto */
+  min-height: 100vh;
+}
+
+/* 4. SECCIONES Y TEXTOS */
+section {
+  margin-bottom: 60px; /* Separación entre secciones */
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee; /* Una línea finita separadora */
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #d12e2e; /* Un rojo oscuro para resaltar (o usa el color de tu marca) */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-left: 5px solid #f4f195; /* Decoración amarilla a la izquierda */
+  padding-left: 10px;
+}
+
+p {
+  line-height: 1.6; /* Altura de línea para que se lea bien */
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* 5. LISTAS BONITAS (Para arreglar tus textos con *) */
+.lista-bonita {
+  list-style: none; /* Quitamos los puntos feos por defecto */
+  padding: 0;
+}
+
+.lista-bonita li {
+  background-color: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #333; /* Borde decorativo */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.lista-bonita strong {
+  color: #000;
+  font-weight: 800;
+  display: block; /* Pone el título en una línea aparte si quieres */
+  margin-bottom: 5px;
+}
+
+/* 6. RESPONSIVE (Móvil) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Menú en vertical en móvil */
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo_alargado {
+    height: 80px; /* Banner más pequeño en móvil */
+  }
+
+  h1 { font-size: 1.8rem; }
+}
