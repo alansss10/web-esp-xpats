@@ -5,141 +5,276 @@ import "../styles/global.css";
 
 <Layout title="ESP_XPAT'S">
   <header>
-    <nav>
-      <ul>
+    <nav class="nav-principal">
+      <div id="logo-btn" class="logo-toggle">
+        <img src="/logoESP_defi.svg" alt="Logo ESP XPAT'S"> 
+      </div>
+
+      <ul id="menu-enlaces" class="menu-oculto">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#nosotros">Servicios</a></li>
+        <li><a href="#planes">Planes</a></li>
         <li><a href="#contactanos">Contactos</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
+    
     <section id="servicios" class="section-container">
-  <h3>¿QUÉ OFRECEMOS?</h3>
-  <p class="intro-text">
-    Colaboramos con empresas y ETT líderes en el sector logístico de los Países Bajos. 
-    Nuestra misión es eliminar la incertidumbre y actuar como tu aliado.
-  </p>
+      <h3>¿QUÉ OFRECEMOS?</h3>
+      <p class="intro-text">
+        Colaboramos con empresas y ETT líderes en el sector logístico de los Países Bajos. 
+        Nuestra misión es eliminar la incertidumbre y actuar como tu aliado.
+      </p>
 
-  <div class="cards-grid">
-
-    <div class="card">
-      <div class="card-header">
-        <span class="icon"></span>
-        <h4>Asesoramiento Estratégico</h4>
-      </div>
-      <div class="card-body">
-        <p>Te orientamos para seleccionar la vacante que mejor se alinee con tu perfil y expectativas.</p>
-        <div class="contenido-extra">
-          <p>Analizamos tus habilidades y experiencia previa para asegurarnos de que el puesto que elijas no solo sea un trabajo, sino un paso adelante en tu carrera profesional. Evitamos que aceptes ofertas que no te convienen.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-header">
+            <h4>Asesoramiento Estratégico</h4>
+          </div>
+          <div class="card-body">
+            <p>Te orientamos para seleccionar la vacante que mejor se alinee con tu perfil y expectativas.</p>
+            <div class="contenido-extra">
+              <p>Analizamos tus habilidades y experiencia previa para asegurarnos de que el puesto que elijas no solo sea un trabajo, sino un paso adelante en tu carrera profesional. Evitamos que aceptes ofertas que no te convienen.</p>
+            </div>
+            <button class="btn-leer-mas">Leer más</button>
+          </div>
         </div>
-        <button class="btn-leer-mas">Leer más</button>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <span class="icon"></span>
-        <h4>Claridad Jurídica</h4>
-      </div>
-      <div class="card-body">
-        <p>Traducimos y desglosamos tus contratos y condiciones laborales.</p>
-        <div class="contenido-extra">
-          <p>Con nosotros, siempre sabrás qué estás firmando. Te explicamos la letra pequeña, las cláusulas de rescisión, los horarios y tus derechos según la ley holandesa, eliminando la barrera del idioma.</p>
+        <div class="card">
+          <div class="card-header">
+            <h4>Claridad Jurídica</h4>
+          </div>
+          <div class="card-body">
+            <p>Traducimos y desglosamos tus contratos y condiciones laborales.</p>
+            <div class="contenido-extra">
+              <p>Con nosotros, siempre sabrás qué estás firmando. Te explicamos la letra pequeña, las cláusulas de rescisión, los horarios y tus derechos según la ley holandesa, eliminando la barrera del idioma.</p>
+            </div>
+            <button class="btn-leer-mas">Leer más</button>
+          </div>
         </div>
-        <button class="btn-leer-mas">Leer más</button>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <span class="icon"></span>
-        <h4>Auditoría de Nóminas</h4>
-      </div>
-      <div class="card-body">
-        <p>Realizamos una revisión exhaustiva de tus pagos mensuales.</p>
-        <div class="contenido-extra">
-          <p>Garantizamos que cada hora trabajada (incluyendo horas extra, festivos y turnos de noche) sea remunerada correctamente. Si hay un error en tu nómina, nosotros gestionamos la reclamación por ti.</p>
+        <div class="card">
+          <div class="card-header">
+            <h4>Auditoría de Nóminas</h4>
+          </div>
+          <div class="card-body">
+            <p>Realizamos una revisión exhaustiva de tus pagos mensuales.</p>
+            <div class="contenido-extra">
+              <p>Garantizamos que cada hora trabajada (incluyendo horas extra, festivos y turnos de noche) sea remunerada correctamente. Si hay un error en tu nómina, nosotros gestionamos la reclamación por ti.</p>
+            </div>
+            <button class="btn-leer-mas">Leer más</button>
+          </div>
         </div>
-        <button class="btn-leer-mas">Leer más</button>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <span class="icon"></span>
-        <h4>Gestión Administrativa</h4>
-      </div>
-      <div class="card-body">
-        <p>Te guiamos en los trámites esenciales al llegar a Holanda.</p>
-        <div class="contenido-extra">
-          <p>Te ayudamos con la obtención del BSN (número de ciudadano), la activación del DigiD, la contratación obligatoria del seguro médico, las solicitudes de devolución de impuestos y cualquier otra gestión burocrática necesaria.</p>
+        <div class="card">
+          <div class="card-header">
+            <h4>Gestión Administrativa</h4>
+          </div>
+          <div class="card-body">
+            <p>Te guiamos en los trámites esenciales al llegar a Holanda.</p>
+            <div class="contenido-extra">
+              <p>Te ayudamos con la obtención del BSN (número de ciudadano), la activación del DigiD, la contratación obligatoria del seguro médico, las solicitudes de devolución de impuestos y cualquier otra gestión burocrática necesaria.</p>
+            </div>
+            <button class="btn-leer-mas">Leer más</button>
+          </div>
         </div>
-        <button class="btn-leer-mas">Leer más</button>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <span class="icon"></span>
-        <h4>Soporte Continuo</h4>
-      </div>
-      <div class="card-body">
-        <p>No estás solo. Ofrecemos asistencia permanente durante tu estancia.</p>
-        <div class="contenido-extra">
-          <p>Desde el primer día hasta el último, somos tu punto de contacto para resolver cualquier incidencia con la vivienda, el transporte o la empresa. Actuamos como tu red de seguridad en un país extranjero.</p>
+        <div class="card">
+          <div class="card-header">
+            <h4>Soporte Continuo</h4>
+          </div>
+          <div class="card-body">
+            <p>No estás solo. Ofrecemos asistencia permanente durante tu estancia.</p>
+            <div class="contenido-extra">
+              <p>Desde el primer día hasta el último, somos tu punto de contacto para resolver cualquier incidencia con la vivienda, el transporte o la empresa. Actuamos como tu red de seguridad en un país extranjero.</p>
+            </div>
+            <button class="btn-leer-mas">Leer más</button>
+          </div>
         </div>
-        <button class="btn-leer-mas">Leer más</button>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section id="planes" class="section-container">
+      <h3>NUESTROS PLANES</h3>
+      <p>Selecciona el nivel de acompañamiento que mejor se adapte a tu perfil.</p>
 
-<script>
-  // Buscamos todos los botones de "Leer más"
-  const botones = document.querySelectorAll('.btn-leer-mas');
+      <div class="planes-grid">
+        
+        <div class="plan-card">
+          <h4>Plan Inicial</h4>
+          <p class="precio">Básico</p>
+          <ul class="plan-lista">
+            <li><strong>Incorporación récord:</strong> Empieza a trabajar en un máximo de 1 a 3 semanas.</li>
+            <li><strong>Gestión prioritaria:</strong> Nosotros nos encargamos de toda la burocracia inicial por una pequeña tasa.</li>
+            <li><strong>Acceso directo:</strong> Ideal para demostrar tu talento y asegurar tu posición rápidamente.</li>
+            <li><strong>Pasaporte al Plan Avanzado:</strong> Tras demostrar tu compromiso, podrás escalar a mejores condiciones.</li>
+          </ul>
+          <a href="#contactanos" class="btn_formulario btn-plan" data-plan="Plan Inicial">Elegir Inicial</a>
+        </div>
 
-  botones.forEach(boton => {
-    boton.addEventListener('click', () => {
-      // Al hacer clic, buscamos la tarjeta padre
-      const tarjeta = boton.closest('.card');
-      // Le ponemos o quitamos la clase 'expandida'
-      if(tarjeta){
-        tarjeta.classList.toggle('expandida');
+        <div class="plan-card destacado">
+          <div class="etiqueta-recomendado">Más elegido</div>
+          <h4>Plan Avanzado</h4>
+          <p class="precio">Para perfiles verificados</p>
+          <ul class="plan-lista">
+            <li><strong>Cero inversión inicial:</strong> Sin costes de gestión de entrada.</li>
+            <li><strong>Sueldo Premium:</strong> Mayor pago por hora trabajada.</li>
+            <li><strong>Protección Total:</strong> Soporte legal y seguimiento continuo.</li>
+            <li><em>Disponible exclusivamente para trabajadores con excelente desempeño previo o proceso de selección avanzado.</em></li>
+          </ul>
+          <a href="#contactanos" class="btn_formulario btn-destacado btn-plan" data-plan="Plan Avanzado">Elegir Avanzado</a>
+        </div>
 
-              // Cambiamos el texto del botón
-        if (tarjeta.classList.contains('expandida')) {
-          boton.textContent = "Leer menos";
-        } else {
-          boton.textContent = "Leer más";
-        }
-      }
-      
-    });
-  });
-</script>
+        <div class="plan-card">
+          <h4>Plan de Ayuda</h4>
+          <p class="precio">Asistencia Especial</p>
+          <p style="font-size: 0.9rem; text-align: left; margin-bottom: 15px;"><strong>¿Tu situación actual es un obstáculo?</strong><br>Disponemos de plazas con asistencia especial para candidatos cualificados en situaciones de vulnerabilidad.</p>
+          <ul class="plan-lista">
+             <li>Completa el formulario y nuestro equipo de admisiones verificará tu caso para ayudarte a dar el salto.</li>
+          </ul>
+          <a href="#contactanos" class="btn_formulario btn-plan" data-plan="Plan de Ayuda">Elegir Ayuda</a>
+        </div>
+        
+      </div>
+    </section>
+
     <section id="contactanos" class="section-container">
       <h3>CONTACTA CON NOSOTROS</h3>
       <p>Rellena el formulario y te responderemos lo antes posible</p>
 
       <form action="https://formspree.io/f/xzdabjld" method="POST" class="contactanos_formulario">
         
+        <label for="plan_interes">Plan de interés</label>
+        <select id="plan_interes" name="plan" required>
+          <option value="">Selecciona un plan...</option>
+          <option value="Plan Inicial">Plan Inicial</option>
+          <option value="Plan Avanzado">Plan Avanzado</option>
+          <option value="Plan de Ayuda">Plan de Ayuda</option>
+        </select>
+
         <label for="nombre">Nombre completo</label>
         <input type="text" id="nombre" name="name" placeholder="Tu nombre" required>
 
         <label for="email">Correo electrónico</label>
-        <input type="text" id="email" name="email" placeholder="Tu correo" required>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
 
-        <label for="telefono">Telefono (opcional)</label>
-        <input type="tel" id="telefono" name="phone" placeholder="Tu telefono" required>
+        <label for="telefono">Teléfono (opcional)</label>
+        <input type="tel" id="telefono" name="phone" placeholder="Tu teléfono">
 
-        <label for="mensaje">¿Porque te interesa contactar connosotros?</label>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escibe para que podemos ayudarte" required></textarea>
+        <label for="documento">Documento de identidad</label>
+        <select id="documento" name="documento" required>
+          <option value="">Selecciona una opción...</option>
+          <option value="DNI / NIE Español">DNI / NIE Español</option>
+          <option value="Pasaporte Europeo">Pasaporte Europeo</option>
+          <option value="Documento Extracomunitario">Documento Extracomunitario</option>
+        </select>
+
+        <label for="carnet">¿Tienes carnet de conducir coche?</label>
+        <select id="carnet" name="carnet_coche" required>
+          <option value="">Selecciona una opción...</option>
+          <option value="Si">Sí</option>
+          <option value="No">No</option>
+        </select>
+
+        <label for="ingles">Nivel de inglés</label>
+        <select id="ingles" name="nivel_ingles" required>
+          <option value="">Selecciona tu nivel...</option>
+          <option value="Basico">Básico (A1 - A2)</option>
+          <option value="Intermedio">Intermedio (B1 - B2)</option>
+          <option value="Avanzado">Avanzado (C1 - C2)</option>
+          <option value="Nativo">Nativo</option>
+        </select>
+
+        <label for="mensaje">¿Por qué te interesa contactar con nosotros?</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe para qué podemos ayudarte" required></textarea>
 
         <button type="submit" class="btn_formulario">Enviar mensaje</button>
       </form>
     </section>
-  </main>
+
+</main> 
+  <footer class="pie-pagina">
+    <div class="redes-sociales">
+      <p>Síguenos en nuestras redes sociales:</p>
+      
+      <div class="enlaces-redes">
+        
+        <a href="https://www.tiktok.com/@esp.xpats?_r=1&_t=ZN-93jVLkn2uDG" target="_blank" rel="noopener noreferrer">TikTok</a>
+        
+        </div>
+    </div>
+    <p class="copyright">© 2026 ESP XPAT'S. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // --- 1. SCRIPT PARA LAS TARJETAS "LEER MÁS" ---
+    const botones = document.querySelectorAll('.btn-leer-mas');
+
+    botones.forEach(boton => {
+      boton.addEventListener('click', () => {
+        const tarjeta = boton.closest('.card');
+        
+        if(tarjeta){
+          tarjeta.classList.toggle('expandida');
+
+          if (tarjeta.classList.contains('expandida')) {
+            boton.textContent = "Leer menos";
+          } else {
+            boton.textContent = "Leer más";
+          }
+        }
+      });
+    });
+
+    // --- 2. SCRIPT PARA EL MENÚ DESPLEGABLE ---
+    const navContainer = document.querySelector('.nav-principal'); 
+    const menuEnlaces = document.getElementById('menu-enlaces');
+
+    if(navContainer && menuEnlaces) {
+      const linksMenu = menuEnlaces.querySelectorAll('a');
+
+      // Cuando el ratón ENTRA en la zona -> SE ABRE
+      navContainer.addEventListener('mouseenter', () => {
+        menuEnlaces.classList.add('abierto');
+      });
+
+      // Cuando el ratón SALE de la zona -> SE CIERRA
+      navContainer.addEventListener('mouseleave', () => {
+        menuEnlaces.classList.remove('abierto');
+      });
+
+      // Cuando haces clic en un enlace -> SE CIERRA TAMBIÉN
+      linksMenu.forEach(link => {
+        link.addEventListener('click', () => {
+          menuEnlaces.classList.remove('abierto');
+        });
+      });
+    }
+
+    // --- 3. SCRIPT PARA AUTO-RELLENAR EL PLAN EN EL FORMULARIO ---
+    const botonesPlan = document.querySelectorAll('.btn-plan');
+    const desplegablePlan = document.getElementById('plan_interes') as HTMLSelectElement | null;
+
+    botonesPlan.forEach(boton => {
+      boton.addEventListener('click', () => {
+        // Obtenemos qué plan ha pulsado
+        const planElegido = boton.getAttribute('data-plan');
+        
+        // Si existe el desplegable y hay un plan elegido, lo cambiamos
+        if (desplegablePlan && planElegido) {
+          desplegablePlan.value = planElegido;
+          
+          // Efecto visual pro: Ponemos el campo amarillo 1 segundo
+          desplegablePlan.style.backgroundColor = "#f4f195";
+          desplegablePlan.style.transition = "background-color 0.5s";
+          setTimeout(() => {
+            desplegablePlan.style.backgroundColor = "white";
+          }, 1000);
+        }
+      });
+    });
+  </script>
+
 </Layout>
